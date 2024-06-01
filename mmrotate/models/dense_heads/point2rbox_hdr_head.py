@@ -924,19 +924,19 @@ class Point2RBoxHDRHead(FCOSHead):
                 img_meta=img_meta)
 
     def save_dota_annfiles(self, results, img_meta):
-        # cls_name = ('plane', 'baseball-diamond', 'bridge', 'ground-track-field',
-        #  'small-vehicle', 'large-vehicle', 'ship', 'tennis-court',
-        #  'basketball-court', 'storage-tank', 'soccer-ball-field', 'roundabout',
-        #  'harbor', 'swimming-pool', 'helicopter', 'container-crane', 'airport',
-        #  'helipad')
+        cls_name = ('plane', 'baseball-diamond', 'bridge', 'ground-track-field',
+         'small-vehicle', 'large-vehicle', 'ship', 'tennis-court',
+         'basketball-court', 'storage-tank', 'soccer-ball-field', 'roundabout',
+         'harbor', 'swimming-pool', 'helicopter', 'container-crane', 'airport',
+         'helipad')
         
-        cls_name = ('Boeing737', 'Boeing747', 'Boeing777', 'Boeing787', 'C919', 'A220',
-         'A321', 'A330', 'A350', 'ARJ21', 'Passenger-Ship', 'Motorboat',
-         'Fishing-Boat', 'Tugboat', 'Engineering-Ship', 'Liquid-Cargo-Ship',
-         'Dry-Cargo-Ship', 'Warship', 'Small-Car', 'Bus', 'Cargo-Truck',
-         'Dump-Truck', 'Van', 'Trailer', 'Tractor', 'Excavator',
-         'Truck-Tractor', 'Basketball-Court', 'Tennis-Court', 'Football-Field',
-         'Baseball-Field', 'Intersection', 'Roundabout', 'Bridge')
+        # cls_name = ('Boeing737', 'Boeing747', 'Boeing777', 'Boeing787', 'C919', 'A220',
+        #  'A321', 'A330', 'A350', 'ARJ21', 'Passenger-Ship', 'Motorboat',
+        #  'Fishing-Boat', 'Tugboat', 'Engineering-Ship', 'Liquid-Cargo-Ship',
+        #  'Dry-Cargo-Ship', 'Warship', 'Small-Car', 'Bus', 'Cargo-Truck',
+        #  'Dump-Truck', 'Van', 'Trailer', 'Tractor', 'Excavator',
+        #  'Truck-Tractor', 'Basketball-Court', 'Tennis-Court', 'Football-Field',
+        #  'Baseball-Field', 'Intersection', 'Roundabout', 'Bridge')
 
         det_res = []
         qboxes = rbox2qbox(results.bboxes.tensor)
